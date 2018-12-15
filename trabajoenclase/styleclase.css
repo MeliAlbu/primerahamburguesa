@@ -1,0 +1,225 @@
+body {
+    margin: 0px;
+}
+
+
+
+.header, .footer{
+  background-color: #000;
+  color: red;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  box-sizing: border-box;
+  font-weight: bold;
+
+}
+.header .logo {
+    width: 100px;
+    height: 100px;
+
+
+}
+ .header {
+    margin-bottom: 30px;
+ }
+
+
+.header  .logo img{
+    width: 100%;
+    height: auto;
+
+}
+
+.hamburguesa {
+    display: none;
+}
+.nav ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style-type: none;
+}
+.nav ul li {
+    margin-left:10px;
+}
+
+
+.imagen-principal {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.imagen-principal img {
+   width:100%;
+   height: auto;
+}
+
+.texto-somos{
+    max-width: 800px;
+    font-weight: bold;
+}
+.que-somos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: grey;
+    padding: 10px 30px;
+}
+.logo-somos {
+    width:200px;
+    height:200px;
+}
+
+.que-somos img {
+    width: 100%;
+    height: auto;
+    
+}
+.logos-sociales {
+    display: flex;
+}
+
+
+.nosotras {
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+
+.personas{
+    display: flex;
+    color: orangered;
+    align-items: center;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.logos-sociales {
+    width: 50px;
+    height: 50px;
+}
+
+.logos-sociales img {
+width: 100%;
+height: auto
+}
+
+
+.footer {
+    height: 100px;
+    background-color: black;
+    color: orangered;
+
+}
+footer.redes {
+    display: flex;
+}
+
+footer.redes.logos-sociales {
+    display: flex;
+}
+
+/* Aca empiezan las media queries para responsive*/
+
+@media only screen and (max-width: 480px)  {
+    .imagen-principal {
+        width:100%;
+        margin: 0;
+    }
+
+
+.logo-somos,.logos-sociales {
+    display:none;
+}
+
+.hamburguesa {
+    display:block;
+}
+.nav ul {
+    display: none;
+
+}
+
+
+.nav:hover ul {
+    display: block;
+}
+.nav {
+    position: relative;
+}
+.nav ul {
+position: absolute;
+right: 0px;
+ flex-direction: column;
+ width: 200px;
+ align-items: center;
+ background: white;
+ padding: 0px;
+ text-align: center;
+
+}
+.
+
+.nav ul li {
+    margin-left: 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.nosotras {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    height: auto;
+
+}
+
+.descripcion-persona {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    height: 280px;
+    width: 280px;
+    position: absolute;
+    text-align: center;
+    left: 33px;
+    
+}
+
+.avatar {
+    height: 150px;
+    width: 150px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+  
+}
+
+img {
+    height: 100%;
+
+}
+.persona {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 0;
+
+}
+
+.nombre-persona, .nombre-puesto {
+    background-color: grey;
+    border-radius: 5px;
+}
+.footer {
+    flex-direction: column;
+    align-items: center;
+}
+}
